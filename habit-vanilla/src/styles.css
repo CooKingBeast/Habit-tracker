@@ -3,10 +3,37 @@
 @tailwind utilities;
 
 * {
-
 }
 
 body {
-    background-color: #80b5ea;
-    font-family: 'Kalam', cursive;
+	background-color: #80b5ea;
+	font-family: 'Kalam', cursive;
+}
+/*absolute top-[6rem] right-[1rem] p-5 bg-white shadow-lg rounded-lg*/
+.modal {
+	position: absolute;
+	top: 7rem;
+	right: 30rem;
+	padding: 5px;
+	background-color: white;
+
+	/*shadow: linear-gradient(black);*/
+}
+/*rounded-full opacity-70 border-2 border-dashed border-black h-12 w-12 flex items-end
+justify-center text-4xl uppercase font-bold*/
+.habit-buttons {
+	border-radius: 50%;
+	opacity: 0.7;
+	border: 2px dashed black;
+	height: 3rem;
+	width: 3rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	font-size: 2.441rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+}
+.modal-disable {
+	display: none;
 }
