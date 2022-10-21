@@ -1,7 +1,7 @@
 const modalTriggerSelector = document.querySelector('.modal-trigger')
 const modalSelector = document.querySelector('.modal')
-const modalInputSelector = document.getElementById('modal_input')
-const modalButtonSelector = document.getElementById('modal_button')
+const modalInputSelector = document.querySelector('.modal_input')
+const modalButtonSelector = document.querySelector('.modal_button')
 const progressBarSelector = document.querySelector('.progress-bar')
 const habitsSectionSelector = document.querySelector('.habits-section')
 
@@ -15,11 +15,14 @@ const handleModal = () => {
 }
 
 const handleAddHabit = () => {
-	if (modalInputSelector.value.trim()) {
+	const text = modalInputSelector.value.trim()
+	if (text) {
 		modalSelector.classList.add('modal-disable')
-		handleCreateHabit(modalInputSelector.value.trim())
+		handleCreateHabit(text)
 	}
 	modalInputSelector.value = ''
+	totalDays += 7
+	refreshProgressBar()
 }
 
 const handleCreateHabit = (habitName) => {
@@ -46,8 +49,6 @@ const handleCreateHabit = (habitName) => {
 						</div>
 					</div>`
 	)
-	totalDays += 7
-	refreshProgressBar()
 }
 
 const handleChecked = (target) => {
