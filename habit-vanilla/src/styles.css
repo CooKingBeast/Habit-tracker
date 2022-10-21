@@ -9,18 +9,25 @@ body {
 	background-color: #80b5ea;
 	font-family: 'Kalam', cursive;
 }
-/*absolute top-[6rem] right-[1rem] p-5 bg-white shadow-lg rounded-lg*/
+
 .modal {
 	position: absolute;
 	top: 7rem;
 	right: 30rem;
 	padding: 5px;
 	background-color: white;
-
-	/*shadow: linear-gradient(black);*/
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+	border-radius: 0.5rem;
 }
-/*rounded-full opacity-70 border-2 border-dashed border-black h-12 w-12 flex items-end
-justify-center text-4xl uppercase font-bold*/
+.modal-disable {
+	display: none;
+}
+.progress-bar {
+	background-color: #f5f6f7;
+	width: 0;
+}
+
 .habit-buttons {
 	border-radius: 50%;
 	opacity: 0.7;
@@ -34,6 +41,14 @@ justify-center text-4xl uppercase font-bold*/
 	line-height: 2.5rem;
 	font-weight: 700;
 }
-.modal-disable {
-	display: none;
+
+.checked {
+	display: flex;
+	align-items: center;
+	background-image: url('../assets/checked.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 48px;
+	height: 48px;
+	font-size: 0;
 }

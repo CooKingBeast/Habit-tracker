@@ -13,8 +13,6 @@
 			rel="stylesheet"
 		/>
 	</head>
-
-	<!--npx tailwindcss -i ./habit-vanilla/src/styles.css -o ./dist/output.css --watch-->
 	<body class="mt-10">
 		<div class="max-w-[1000px] bg-slate-50 m-auto rounded-xl p-8">
 			<header class="flex justify-between items-center p-[40px] relative">
@@ -46,46 +44,10 @@
 					<div
 						class="bg-[#262923] font-bold text-xl text-center rounded-lg overflow-hidden"
 					>
-						<div class="bg-[#F5F6F7]" style="width: 30%">30%</div>
+						<div class="progress-bar">0%</div>
 					</div>
 				</section>
-				<section class="koko">
-					<div class="mb-6">
-						<div class="flex items-center gap-4 mb-5">
-							<img
-								src="../assets/lifestyle.png"
-								alt="lifestyle"
-								width="80"
-							/>
-							<span class="font-bold text-2xl">No caffeine</span>
-						</div>
-
-						<div class="flex items-center gap-6">
-							<button
-								class="h-12 w-12 flex items-center justify-center"
-							>
-								<img
-									src="../assets/checked.png"
-									alt="check-mark"
-									width="50"
-								/>
-							</button>
-							<button
-								class="h-12 w-12 flex items-center justify-center"
-							>
-								<img
-									src="../assets/checked.png"
-									alt="check-mark"
-									width="50"
-								/>
-							</button>
-							<button class="habit-buttons">W</button>
-							<button class="habit-buttons">T</button>
-							<button class="habit-buttons">F</button>
-							<button class="habit-buttons">S</button>
-							<button class="habit-buttons">S</button>
-						</div>
-					</div>
+				<section class="habits-section">
 				</section>
 			</main>
 		</div>
